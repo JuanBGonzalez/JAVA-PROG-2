@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+
+/**
+ * @author JuanB
+ *
+ */
+public class Figuras {
+
+	public class Elipse{
+		 public class Circulo{
+			 
+		 }
+	}
+    public class Poligono{
+    	private int lados;
+    	private int x, y;
+    	
+    	public int getLados( ) {
+    		return this.lados;
+		}
+    	public void setLados(int lados){
+    	    this.lados = 6;
+    	  }
+    	public int getX( ) {
+    		return this.x;
+		}
+    	public void setX(int x){
+    		this.x = x;
+    	}
+    	public int getY( ) {
+    		return this.y;
+		}
+    	public void setY(int y){
+    		this.y = y;
+    	}
+    	
+    	public class Triangulo{
+    		
+    	}
+    	public class cuadrilatero{
+    		public class Rectangulo{
+    			public class cuadrado{
+    				
+    			}
+    		}
+    	}
+    }
+}
