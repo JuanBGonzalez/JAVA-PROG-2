@@ -1,0 +1,52 @@
+Que son las pruebas unitarias
+R:es “una forma de probar el correcto funcionamiento de un módulo de código. Esto sirve para asegurar que cada uno de los módulos funcione correctamente por separado.
+Lo cierto es que si las hacemos, dependiendo del caso, podemos ahorrarnos mucho tiempo, ya que habremos automatizado las pruebas e instantáneamente 
+sabremos si nuestra aplicación cumple con los resultados correctos
+
+Porque realizar pruebas unitarias?
+• Asegura calidad del código entregado. Es la mejor forma de detectar errores  tempranamente en el desarrollo. No obstante, esto no asegura detectar todos los errores, 
+por  tanto prueba de integración y aceptación siguen siendo necesarias. • Ayuda a definir los requerimientos y responsabilidades de cada método en cada clase  probada. 
+• Constituye una buena forma de ejecutar pruebas de concepto. Cuando es necesario  hacer pruebas de conceptos sin integrar usar pruebas unitarias se convierte en un método  efectivo.
+• Permite hacer refactoring tempranamente en el código. No es necesario todo un ciclo de  integración para hacer refactoring en la aplicación, basta con ver como se 
+comporta un caso  de prueba para hacer refactoring unitario sobre la clase que estamos probando en cuestión. 
+• Permite incluso hacer pruebas de estress tempranamente en el código. Por ejemplo un  método que realize una consulta SQL que exceda los tiempos de aceptación es posible 
+ optimizarla antes de integrar con la aplicacíón. 
+• Permite encontrar errores o bugs tempranamente en el desarrollo. Y está demostrado  que mientras más temprano se corrigan los errores, menos costará corregirlos.
+
+Como funcionan?
+Funcionan atravez de JUnit , despues de crear tu codigo Eclipe te da una opcion , que se llama JUnit que te permite. Lo integras cuando 
+le das a tu carpeta de trabajo del codigo Build path y le das add libraries y Clickeas JUnit Y Listo. Despues te vas a tu clase que desear comprobar y le das click derecho
+new<Junit test< y el te dara opcciones de que metodo quieres probar.
+
+y un ejemplo de como implementarlo(codigo)
+public class EmpleadoBRTest {
+  @Test
+  public void testCalculaSalarioBruto1() {
+    float resultadoReal = EmpleadoBR.calculaSalarioBruto(
+                           TipoEmpleado.vendedor, 2000.0f, 8.0f);
+    float resultadoEsperado = 1360.0f;
+    assertEquals(resultadoEsperado, resultadoReal, 0.01);
+  }
+     
+  @Test
+  public void testCalculaSalarioBruto2() {
+    float resultadoReal = EmpleadoBR.calculaSalarioBruto(
+                           TipoEmpleado.vendedor, 1500.0f, 3.0f);
+    float resultadoEsperado = 1260.0f;
+    assertEquals(resultadoEsperado, resultadoReal, 0.01);
+  }
+ 
+  @Test
+  public void testCalculaSalarioNeto1() {
+    float resultadoReal = EmpleadoBR.calculaSalarioNeto(2000.0f);
+    float resultadoEsperado = 1640.0f;
+    assertEquals(resultadoEsperado, resultadoReal, 0.01);
+  }
+ 
+  @Test
+  public void testCalculaSalarioNeto2() {
+    float resultadoReal = EmpleadoBR.calculaSalarioNeto(1500.0f);
+    float resultadoEsperado = 1230.0f;
+    assertEquals(resultadoEsperado, resultadoReal, 0.01);
+  }
+}
