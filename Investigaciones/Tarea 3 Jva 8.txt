@@ -1,0 +1,33 @@
+Tarea 3(creo)
+Estas son las principales actualizaciones de Java7?Java 8.
+Con la publicación de Java 8 el pasado 18 de marzo de 2014 he escrito una entrada en mi blog Blog Bitix en la que he tradado de recopilar las novedades más relevantes y destacables de
+ esta nueva versión, un repaso a las novedades pasadas de Java 5, 6, y 7 y el posible futuro de Java 9. Reproduzco casi integramente la entrada de mi blog a continuación.
+Java 8 incorporará varias novedades siguiendo la tendencia de otros lenguajes como la incorporación de lambdas o closures o una demandada nueva API para el manejo de fechas entre otras 
+muchas características más. La lista completa de novedades es bastante amplia, a continuación pondré lo que me ha parecido más destacable:
+•	Se añaden las expresiones lambda o closures y se adapta la API para usarlas en los sitios que se pueda.
+•	Se definen nuevos perfiles compactos para dispositivos que no necesitan toda la API Java, esto es una alternativa a la modularización. Inicialmente la modularización era una 
+característica que estaba planificada para Java 8 pero finalmente se ha aplazado a posteriores versiones.
+•	Incluido nuevo motor de Javascript Nashorn que implementa ECMAscript 5.1 y es más rápido que su predecesor Rhino.
+•	Eliminación de espacio de memoria Permanent Generation (PermGen) que pasa a llamarse Metaspace. Su tamaño será dinámico pero no evitará fugas de memoria.
+•	Soporte para la creación de una máquina virtual menor a 3 MB.
+•	Acceso mediante reflection a los nombres de los parámetros. Mejorará la legibilidad del código que use reflection y permitirá mejorar el soporte en los IDE.
+•	Ordenación en java.util.Arrays de forma paralela.
+•	Operaciones masivas sobre colecciones tales como filter/map/reduce (streams) de forma serializada o paralela.
+•	Soporte de forma estándar para la codificación y decodificación Base64.
+•	Nueva API para Date y Time.
+•	Varias mejoras de seguridad.
+•	Se incorporan en la máquina virtual Java HotSpot características que estaban en JRockit, convergiendo ambas máquinas virtuales. Se incorpora Mission Control.
+•	Mejoras en JDBC la base para el acceso en bases de datos en Java.
+Lambda
+Esta es una de las principales novedades y que más se estaba echando de menos en Java de otros lenguajes como Groovy o Python. Las expresiones lambda son funciones que no está asociadas
+ a un determinado nombre y que pueden pasarse como argumento a otras funciones. Tienen el siguiente aspecto:
+
+
+Interfaces funcionales
+Una interfaz funcional es aquella que solo tiene un método abstracto (sin implementación). Algunos ejemplos de interfaces funcionales son Runnable, ActionListener, Comparator y Callable.
+ Para definir una interfaz funcional se puede usar la anotación @FunctionalInterface y pueden representarse con una expresión lambda. En el siguiente ejemplo puede apreciarse que con 
+las interfaces funcionales y las lambdas podemos hacer lo mismo de forma más clara, menos verbosa y con código más legible.
+
+Java Time
+Trabajar con fechas, horas y diferentes zonas horarias en Java tradicionalmente ha sido molesto, para tratar de mejorar la situación podíamos usar la librería JodaTime. Finalmente,
+ después de mucho tiempo esperando a que se hiciera se va a proporcionar una mejor API en el JDK 8 para trabajar con fechas, horas y zonas horarias.

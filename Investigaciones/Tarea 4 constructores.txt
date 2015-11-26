@@ -1,0 +1,43 @@
+Tarea 4
+Que son los constructores son un conjunto de parámetros y métodos , los cuales van dentro de una clase y no retornan resultados si no que, tu los llamas en tu programa 
+principal(osea el main) creando un objeto de la clase  y usando el código nombreclass nomeobjeto = new nombreclass();
+En Java podemos definir un método que se ejecute inicialmente y en forma automática. Este método se lo llama constructor.
+El constructor tiene las siguientes características:
+Tiene el mismo nombre de la clase.
+Es el primer método que se ejecuta.
+Se ejecuta en forma automática.
+No puede retornar datos.
+Se ejecuta una única vez.
+Un constructor tiene por objetivo inicializar atributos.
+
+Un constructor puede:
+a) Carecer de parámetros: que no sea necesario pasarle un parámetro o varios al objeto para inicializarse. Un constructor sin parámetros se denomina “constructor general”.
+b) Carecer de contenido. Por ejemplo, public Taxi () { } podría ser un constructor, vacío. En general un constructor no estará vacío, pero en algunos casos particulares
+ puede estarlo. Si el constructor carece de contenido los campos se inicializan con valor nulo o, si son tipos definidos en otra clase, como se haya definido en el
+ constructor de la otra clase. Excepto en casos controlados, evitaremos que existan constructores vacíos.
+import java.util.Scanner;
+public class Operarios {
+    private Scanner teclado;
+    private int[] sueldos;
+	
+    public Operarios()
+    {
+        teclado=new Scanner(System.in);
+        sueldos=new int[5];
+        for(int f=0;f<5;f++) {
+            System.out.print("Ingrese valor de la componente:");
+            sueldos[f]=teclado.nextInt();
+        }	
+    }
+	
+    public void imprimir() {
+        for(int f=0;f<5;f++) {
+            System.out.println(sueldos[f]);
+        }
+    }
+	
+    public static void main(String[] ar) {
+        Operarios op=new Operarios();
+        op.imprimir();
+    }
+}

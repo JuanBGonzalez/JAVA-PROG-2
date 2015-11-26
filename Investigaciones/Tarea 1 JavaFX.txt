@@ -1,0 +1,32 @@
+﻿TAREA
+1
+Fecha de Revisión: 01/10/2015
+-----
+
+Instrucciones:
+--------------
+Investigue lo siguiente:
+1. ¿Qué es JavaFX?
+  R:Es un producto de la empresa Oracle coporation y tecnologias de Sunmicrosystems,  Es una aplicacion 
+web , que permite a todos los programadores que usan la aplicacion implementar las aplicaciones de la 
+tecnologia(RIAs)Rich internet applications , JavaFX va mas alla de Java , esto quiere decir que permite a los programadores utilizar
+cualquier biblioteca de java y usar la tecnologia de JavaFX. En OS su version actual soporta los sistemas operativos de
+Windows, Mac OSX. Tambiem esta en los dispositivos moviles como windows mobile y android.
+2. ¿Cómo se instala?
+ -La forma completa con todo y su kit es entrando a la pagina de http://www.oracle.com/technetwork/java/javase/downloads/
+   y instalando JDK 7 update 4 y JavaFX 2.1 SDK(aqui se incluyo todo)  hay para 32 bit y 64 bit
+   claro JavaFX tiene requisitos asi que seria recomendable verlos primero.
+ -Hay muchos otras herramientas con que usarlo netbeans eclipse... etc Yo explicare eclipse(suponiedo que ya eclipse esta installado)
+   En la pagina http://download.java.net/general/javafx/eclipse/tutorial.html (Esta el manual de como intrucir JavaFX a tu Eclipse)
+   Esta facilmente explicado como instalar el plugin que hace falta en el ecilpse para usarlo con JavaFX.
+  (Aqui hare una explicacion breve de que es lo que mas o menos esta sucediendo).
+ -Ahora corre tu eclipse normalmente y has tu programa de prueba(como explica en el tutorial de la pagina) lo que se hara
+es anadir JavaFx Nature(osea sus funciones y eso al programa) y te saldra que no reconoce donde esta ubicado y buscaras en tu directorio y le ensenaras donde esta ubicado
+,entonces es cuando Eclipse te reconocera a JavaFX como una implementacion a los programas.
+3. ¿Cómo funciona?
+El JavaFx SDK este contiene todo y funciona como compilador , libreria, runtime  y todas las herramientas necesarias para crear y desarrolar una aplicacion
+(explicacion ruda)
+-El funciona como un animador, en tu eclipse (o cualquier herramienta que uses) el te dara multiples opciones de 
+integrar graficos vectoriales, animaciones, sonido y activos web de video en una aplicacion que este creando.
+-Funciona con las bibliotecas de Java.
+-
