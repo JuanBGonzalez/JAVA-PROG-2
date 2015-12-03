@@ -1,0 +1,50 @@
+JShell: An Interactive Shell for the Java Platform by Robert Field 
+
+
+Naming
+?Module ?jdk.jshell
+?Tool launcher ?jshell
+?API package ?jdk.jshell
+?API implementation package ?jdk.internal.jshell.impl
+?API implementation remote agent package ?jdk.internal.jshell.impl.remote
+?Tool package ?jdk.internal.jshell.tool
+?OpenJDK Project ?Kulla
+
+The JShell API and tool will provide a way to interactively evaluate 
+declarations, statements, and expressions of the Java programming language
+ within the JShell state. The JShell state includes an evolving code and 
+execution state. To facilitate rapid investigation and coding, statements
+ and expressions need not occur within a method, expressions need not have 
+side-effects, variables need not occur within a class, and methods need not
+ occur within a class or interface.
+
+The jshell tool will be a command-line tool with features to ease 
+interaction including: a history with editing, tab-completion, automatic
+addition of needed terminal semicolons, and configurable predefined imports 
+and definitions.
+
+The JShell API will provide all of JShell's evaluation functionality. The code
+ fragments that are input to the API are referred to as "snippets". The jshell
+ tool will also use the JShell completion API to determine when input is 
+incomplete (and the user must be prompted for more) or would be complete 
+if a semicolon were added (in which case the tool will append the semicolon).
+The tool will have a set of commands for query, saving and restoring work, 
+and configuration. Commands will be distinguished from snippets by a leading
+ slash.
+
+(Para que no digan que no se nada)
+Conclusion: Jshel es una herramienta que nos permite tener un control mas de nuestro
+Programa antes de ejecucion , ya que podras probar tus fragmentos de codigo facilmente
+atravez de la terminal jshell, y podras compilar rapidamente tu codigo ,ademas te
+dire si tienes errores o s alguna variable te falta te lo dira todo. Esto funciona con el proyecto KULL que  es un
+Read–eval–print loop osea  un lector(de lo que tu digites), Evaluador(Evalua tu codigo y piensa en cual es y como terminarlo) 
+y el print loop(que seria la impresion).
+
+Puedes implementar metodos clases interfaces,enum.
+Ademas tiene un autoescritor osea que si no has terminado tu codigo osea mientras pongas las 4 primeras letras
+de la funcion o clase el automaticamente identificara que es lo que quieres escribir y lo terminara por ti.(sirve para cosas pequenas)
+Ademas posee un gran menu de tus metodos que crear utlizando \methods o tus clases podras verlas con \class
+Es muy interactivo para programadores principales por su feedback rapido.
+Concluyo que es un gran avanaze para los que programamos en java y nos beneficiara bastante.
+
+
