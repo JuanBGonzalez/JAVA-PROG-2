@@ -32,12 +32,11 @@ The tool will have a set of commands for query, saving and restoring work,
 and configuration. Commands will be distinguished from snippets by a leading
  slash.
 
-(Para que no digan que no se nada)
 Conclusion: Jshel es una herramienta que nos permite tener un control mas de nuestro
 Programa antes de ejecucion , ya que podras probar tus fragmentos de codigo facilmente
 atravez de la terminal jshell, y podras compilar rapidamente tu codigo ,ademas te
 dire si tienes errores o s alguna variable te falta te lo dira todo. Esto funciona con el proyecto KULL que  es un
-Read–eval–print loop osea  un lector(de lo que tu digites), Evaluador(Evalua tu codigo y piensa en cual es y como terminarlo) 
+Readâ€“evalâ€“print loop osea  un lector(de lo que tu digites), Evaluador(Evalua tu codigo y piensa en cual es y como terminarlo) 
 y el print loop(que seria la impresion).
 
 Puedes implementar metodos clases interfaces,enum.
